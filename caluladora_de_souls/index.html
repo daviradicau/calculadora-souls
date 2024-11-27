@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Souls</title>
+</head>
+<body>
+    <form>
+        <div id="label-wrapper">
+            <label for="current-input">
+                <h1>Nível Atual</h1>
+                <input type="number" id="current-input">
+            </label>
+
+            <label for="desired-level">
+                <h1>Nível Desejado</h1>
+                <input type="number" id="desired-input">
+            </label>
+        </div>
+
+        <button id="submit-button" type="submit" onclick="onCalc(event)">Calcular</button>
+
+        <div id="total-wrapper">
+            <h1>Custo Total</h1>
+            <div id="total"></div>
+        </div>
+    </form>
+    
+</body>
+<script src="main.js"></script>
+</html>

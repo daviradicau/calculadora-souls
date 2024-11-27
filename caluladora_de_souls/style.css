@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --text-shadow-black: 0.1rem 0.1rem 0 #222, -0.1rem -0.1rem 0 #222, -0.1rem 0.1rem 0 #222, 0.1rem -0.1rem 0 #222;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    display: grid;
+    place-content: center;
+    font-family: 'Arial';
+}
+
+form {
+    padding: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #666;
+    border-radius: 12px;
+}
+
+#label-wrapper {
+    display: flex;
+    gap: 2.5rem;
+}
+
+h1 {
+    color: #ee0;
+    text-shadow: var(--text-shadow-black);
+    text-align: center;
+    margin-bottom: .4rem;
+}
+
+input {
+    width: 20rem;
+    height: 3rem;
+    padding: 0 .5rem;
+    font-size: 2rem;
+    color: #ee0;
+    text-shadow: var(--text-shadow-black);
+    text-align: center;
+    background-color: #a3a3a3;
+    border: 2px solid #222;
+    border-radius: 8px;
+    outline: none;
+}
+
+#submit-button {
+    width: 10rem;
+    height: 5rem;
+    font-size: 2rem;
+    color: #ee0;
+    text-shadow: var(--text-shadow-black);
+    background-color: #a3a3a3;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: .2s;
+}
+
+#submit-button:hover {
+    cursor: pointer;
+    background-color: #b3b3b3;
+}
+
+#total {
+    width: 33.3rem;
+    height: 4rem;
+    display: grid;
+    place-content: center;
+    font-size: 3rem;
+    color: #ee0;
+    text-shadow: var(--text-shadow-black);
+    background-color: #a3a3a3;
+    border: 2px solid #222;
+    border-radius: 8px;
+}
